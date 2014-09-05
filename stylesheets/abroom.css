@@ -1,0 +1,63 @@
+/***
+	Author: Alexander Broom
+	Date: September 5, 2014
+
+	CSS Style Sheet for my personal website
+***/
+
+/*** Body ***/
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/*** Header ***/
+header {
+	margin: 0 auto;
+}
+
+/* Expand div downward to contain floating divs */
+#profile-navbar:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+/* Float profile to left */
+#profile {float: left;}
+/* Float navbar to right and style */
+#navbar {float: right; text-align: right; list-style-type: none; padding: 0;}
+#navbar li {display: inline; padding: 25px;}
+
+/* Title */
+.title {text-align: center; margin: 0; padding: 0;}
+
+/*** Content ***/
+#wrap {
+}
+#wrap:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.col * {
+	padding: 0;
+	margin: 0;
+}
+
+/* Responsive web design, about and links stack when viewport shrinks significantly */
+@media (min-width: 700px) {
+	.col {float: left; width: 50%;}
+}
+
+/* Footer */
+footer {
+
+}
