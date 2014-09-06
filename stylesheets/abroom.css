@@ -12,8 +12,15 @@ body {
 	width: 100%;
 	background-image: url('images/bg-art-stream.png');
 	background-repeat: no-repeat;
-	background-position: 25px 0;
 	background-attachment: fixed;
+	background-position: 25px 0;
+}
+/* Graphics */
+#graphics {
+	background-image: url('images/bg-art-overlay.png');
+	background-position: 25px 0;
+	background-repeat: no-repeat;
+	background-size: 100px 100%;
 }
 
 /*** Header ***/
