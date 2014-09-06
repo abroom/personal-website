@@ -15,9 +15,6 @@ body {
 	background-position: 25px 0;
 	background-attachment: fixed;
 }
-@media (min-width: 2500px) {
-	#wrap {max-width: 2000px; margin: 0 auto; padding-left: 0 !important;}
-}
 
 /*** Header ***/
 header {
@@ -63,6 +60,7 @@ header {
 @media (max-width: 1025px) {
 	#profile-container {text-align: center; margin-top: 35px;}
 	#navbar {text-align: center; font-size: 1.2em;}
+	#navbar li {padding: 20px;}
 }
 
 /* Title */
@@ -106,6 +104,9 @@ header {
 @media (max-width: 1025px) {
 	#wrap {font-size: 1em;}
 	#wrap h3 {margin: 1em;}
+}
+@media (min-width: 2500px) {
+	#wrap {max-width: 2000px; margin: 0 auto; padding-left: 0 !important;}
 }
 
 #about-contact-container:after {
@@ -206,4 +207,10 @@ header {
 
 /* Footer */
 footer {
+	margin: 1em 2em;
+	font-size: 1.5em;
+}
+footer div {
+	width: 400px;
+	margin: 0 auto;
 }
