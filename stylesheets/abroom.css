@@ -9,11 +9,27 @@
 body {
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	background-image: url('images/bg-art-stream.png');
+	background-repeat: no-repeat;
+	background-position: 25px 0;
+	background-attachment: fixed;
 }
 
 /*** Header ***/
 header {
 	margin: 0 auto;
+	padding-top: 2em;
+	height: 400px;
+	background-color: #4881b8;
+	background-image: url('images/header-bg.jpeg');
+	background-size: auto 100%;
+	background-position: 50% 0;
+}
+
+#profile-navbar {
+	width: 60%;
+	margin: 2em auto 0 auto;
 }
 
 /* Expand div downward to contain floating divs */
@@ -26,19 +42,32 @@ header {
 	height: 0;
 }
 
-/* Float profile to left */
-#profile {float: left;}
+/* Float profile to left and style*/
+#profile {float: left; border: 5px #e2c05c solid; border-radius: 15px;}
 /* Float navbar to right and style */
 #navbar {float: right; text-align: right; list-style-type: none; padding: 0;}
-#navbar li {display: inline; padding: 25px;}
+#navbar li {display: inline; padding: 25px; color: #e2c05c;}
 
 /* Title */
-.title {text-align: center; margin: 0; padding: 0;}
+.title {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	color: white;
+	font-family: Oxygen, Arial, sans-serif
+}
 
 /*** Content ***/
 #wrap {
+	min-height: 100px;
+	color: #4881b8;
+	padding-left: 150px;
 }
-#wrap:after {
+#wrap h3 {
+	margin: 0;
+}
+#about-links-container:after {
 	content: ".";
 	display: block;
 	clear: both;
@@ -59,5 +88,4 @@ header {
 
 /* Footer */
 footer {
-
 }
