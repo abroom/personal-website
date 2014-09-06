@@ -25,28 +25,37 @@ header {
 	background-image: url('images/header-bg.jpeg');
 	background-size: auto 100%;
 	background-position: 50% 0;
+	border-bottom: 0.5em #e2c05c solid;
 }
 
-#profile-navbar {
-	width: 60%;
-	margin: 2em auto 0 auto;
-}
 
-/* Expand div downward to contain floating divs */
-#profile-navbar:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+/* Responsive web design, center portrait and navbar */
+@media (min-width: 820px) {
+	#profile-navbar {
+		width: 60%;
+		margin: 2em auto 0 auto;
+	}
+	/* Expand div downward to contain floating divs */
+	#profile-navbar:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	/* Float profile to left and style*/
+	#profile {float: left;}
+	/* Float navbar to right and style */
+	#navbar {float: right; text-align: right;}
 }
-
-/* Float profile to left and style*/
-#profile {float: left; border: 5px #e2c05c solid; border-radius: 15px;}
-/* Float navbar to right and style */
-#navbar {float: right; text-align: right; list-style-type: none; padding: 0;}
-#navbar li {display: inline; padding: 25px; color: #e2c05c;}
+@media (max-width: 820px) {
+	#profile-container {text-align: center; margin-top: 35px;}
+	#navbar {text-align: center;}
+}
+#profile {border: 5px #e2c05c solid; border-radius: 15px;}
+#navbar {list-style-type: none; padding: 0;}
+#navbar li {display: inline; padding: 25px; color: #e2c05c; font-family: arial, sans-serif;}
 
 /* Title */
 .title {
@@ -57,6 +66,15 @@ header {
 	color: white;
 	font-family: Oxygen, Arial, sans-serif
 }
+.title h1 {margin: 2em 0 0 0;}
+.title h3 {font-size: 0.6em;}
+.title b {font-family: "Times New Roman", Times, serif; font-size: 1.2em;}
+/* Responsive */
+@media (max-width: 820px) {
+	.title {font-size: 1em;}
+	.title h1 {max-width: 8em; margin: 2em auto 0 auto;}
+	.title h3 {font-size: 0.9em;}
+}
 
 /*** Content ***/
 #wrap {
@@ -66,7 +84,20 @@ header {
 }
 #wrap h3 {
 	margin: 0;
+	font-size: 1.3em;
+	font-family: arial, sans-serif;
+	padding: 2em 3em 1em 3em;
 }
+#wrap p {
+	padding: 0 2em 1em 2em;
+	font-size: 1.3em;
+	color: black;
+}
+/* Responsive */
+@media (max-width: 820px) {
+	#wrap h3 {padding: 2em;}
+}
+
 #about-links-container:after {
 	content: ".";
 	display: block;
@@ -76,15 +107,45 @@ header {
 	height: 0;
 }
 
+/* Columns */
 .col * {
 	padding: 0;
 	margin: 0;
 }
-
 /* Responsive web design, about and links stack when viewport shrinks significantly */
-@media (min-width: 700px) {
-	.col {float: left; width: 50%;}
+@media (min-width: 820px) {
+	.col {float: left;}
+	#about-col {width: 60%;}
+	#links-col {width: 30%; margin-right: 10%;}
 }
+
+#links-col ul {margin: 0 auto; font-size: 1.3em;}
+#links-col li {
+	margin: 0.5em 0;
+	list-style: none;
+	background-color: #4881b8;
+	max-width: 10em;
+	text-align: center;
+	vertical-align: middle;
+	padding: 1em;
+	font-size: 1.2em;
+	border-radius: 0.4em;
+	border-top: 5px #e2c05c solid;
+	border-left: 5px #e2c05c solid;
+	border-bottom: 5px #B59A4A solid;
+	border-right: 5px #B59A4A solid;
+	font-family: arial, sans-serif;
+}
+#links-col a {text-decoration: none; color: #e2c05c;}
+#links-col p {color: #4881b8; margin-left: 0; padding: 0;}
+/* Responsive */
+@media (max-width: 820px) {
+	#links-col li {margin: 0.5em auto;}
+	#links-col p {margin-left: 2.5em;}
+}
+
+/* Resume */
+#resume {width: 60%;}
 
 /* Footer */
 footer {
