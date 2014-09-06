@@ -126,23 +126,25 @@ header {
 #contact-col li {
 	margin: 0.5em 1em;
 	list-style: none;
+}
+.link-button {
 	background-color: #4881b8;
-	max-width: 10em;
+	border-radius: 25px;
+	height: 100px;
+	width: 400px;
+	display: table-cell;
+	
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: arial, sans-serif;
+	color: #e2c05c;
 	text-align: center;
 	vertical-align: middle;
-	padding: 1em;
-	font-size: 1.2em;
-	border-radius: 0.4em;
-	border-top: 5px #e2c05c solid;
-	border-left: 5px #e2c05c solid;
-	border-bottom: 5px #B59A4A solid;
-	border-right: 5px #B59A4A solid;
-	font-family: arial, sans-serif;
 }
-#contact-col a {text-decoration: none; color: #e2c05c;}
 /* Responsive */
 @media (max-width: 1025px) {
-	#contact-col li {margin: 0.5em auto;}
+	.link-button {margin: 0.5em auto;}
 }
 
 /* Resume */	
