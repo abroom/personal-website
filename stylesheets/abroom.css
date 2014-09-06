@@ -15,6 +15,9 @@ body {
 	background-position: 25px 0;
 	background-attachment: fixed;
 }
+@media (min-width: 2500px) {
+	#wrap {max-width: 2000px; margin: 0 auto; padding-left: 0 !important;}
+}
 
 /*** Header ***/
 header {
@@ -25,6 +28,7 @@ header {
 	background-image: url('images/header-bg.jpeg');
 	background-size: auto 100%;
 	background-position: 50% 0;
+	background-repeat: no-repeat;
 	border-bottom: 0.5em #e2c05c solid;
 }
 
@@ -34,6 +38,7 @@ header {
 	#profile-navbar {
 		width: 60%;
 		margin: 2em auto 0 auto;
+		max-width: 2048px;
 	}
 	/* Expand div downward to contain floating divs */
 	#profile-navbar:after {
