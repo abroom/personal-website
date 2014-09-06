@@ -158,7 +158,7 @@ header {
 #resume td{padding-bottom: 0.3em; color: black;}
 
 /* Responsive */
-@media (min-width: 1025px) {
+@media (min-width: 740px) {
 	#resume {width: 100%;}
 	#resume table {margin-left: 1em;}
 	#ss-big {font-size: 1em !important;}
@@ -166,7 +166,10 @@ header {
 	#resume td {padding-right: 1em;}
 	#ss-small {display: none;}
 }
-@media (max-width: 1025px) {
+@media (min-width: 1300px) {
+	#ss-big {font-size: 1.3em !important;}
+}
+@media (max-width: 740px) {
 	#ss-big {display: none;}
 	#resume table {font-size: 1.3em;}
 	#ss-small td {text-align: center;}
