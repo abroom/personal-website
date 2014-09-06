@@ -8,7 +8,7 @@
 <meta name="keywords" content="Alexander,Do,McIntosh,Broom,Website,Computer,Science,Graduate,Colorado,School,of,Mines,Resume">
 <meta name="author" content="Alexander Broom">
 <title>Alexander Broom</title>
-<link rel="stylesheet" type="text/css" href="abroom.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/abroom.css">
 <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -18,34 +18,169 @@
 <header>
 	<div id="profile-navbar">
 		<div id="profile-container">
-			<img id="profile-pic" src="images/profile.jpg" alt="abroom profile picture">
+			<img id="profile" src="images/profile.jpg" alt="abroom profile picture">
 		</div>
-		<ul id="navbar" class="bar">
+		<ul id="navbar">
 			<li>ABOUT</li>
-			<li>LINKS</li>
+			<li>CONTACT</li>
 			<li>CONTENT</li>
 		</ul>
 	</div>
 	<div class="title">
 		<h1>Alexander Do McIntosh Broom</h1>
-		<h3>The "I" is Capitol</h3>
+		<h3>The <b>I</b> is Capital</h3>
 	</div>
 </header>
 
 <!-- wrap for most the content -->
 <div id="wrap">
-<!-- about column on the left -->
-<div id="about-col" class="col">
-	<h3>ABOUT</h3>
+<!-- Container for about and contact -->
+<div id="about-contact-container">
+	<div id="about-col" class="col">
+		<h3>ABOUT</h3>
+		<p>
+			Hello and welcome to my website!  I recently graduated from Colorado School of Mines with a Bachelor of Science in Computer Science on May 9, 2014.  I am always looking for opportunities to expand my knowledge and work with the latest technologies.
+		</p>
+		<p>
+			Currently, I am busy working on developing a couple Android apps, and I am collaborating with two old classmates on developing a website where we will write reviews for all sorts of things.  I am also slowly working on writing a book which will be awesome, and it has been really fun to write.
+		</p>
+		<p>
+			I really enjoy all sorts of games but much prefer multiplayer ones.  Recently, my friends and I have recently become super interested in playing various board games.  Games are great fun, especially when alliances break down and secret pacts are formed.
+		</p>
+	</div>
+
+	<div id="contact-col" class="col">
+		<h3>CONTACT</h3>
+		<ul>
+			<a id="linkedin-link" href=""><li>LinkedIn</li></a>
+			<a id="github-link" href=""><li>GitHub</li></a>
+			<a id="facebook-link" href=""><li>Facebook</li></a>
+		</ul>
+		<p>More Links To Come</p>
+	</div>
 </div>
 
-<div id="links-col" class="col">
-	<h3>LINKS</h3>
+<!-- resume -->
+<div id="resume" >
+	<h3>RESUME</h3>
+
+	<h4>Education</h4>
+	<h5><a href="https://www.mines.edu">Colorado School of Mines</a> (Golden, Colorado) with President&#8217;s Scholarship</h5>
+	<p>Bachelor of Science in Computer Science</p>
+	<p>Graduated May 9, 2014 <b>CSCI GPA: 3.0</b></p>
+
+	<h4>Relevant Courses</h4>
+	<table>
+		<tr><td>Algorithms</td><td>Mobile Programming</td></tr>
+		<tr><td>Computer Graphics</td><td>Operating Systems</td></tr>
+		<tr><td>Computer Organization</td><td>Programming Languages</td></tr>
+		<tr><td>Computer Simulation</td><td>Software Engineering</td></tr>
+		<tr><td>Data Structures</td><td>User Interfaces</td></tr>
+		<tr><td>Discrete Mathematics</td><td>Web Programming</td></tr>
+		<tr><td>Elements of Computing Systems</td><td>Web Applications</td></tr>
+		<tr><td colspan="2">Core Courses for Mechanical Engineering</td></tr>
+	</table>
+
+	<h4>Software Skills</h4>
+	<table id="ss-big">
+		<tr><th colspan="2" rowspan="2">Programming Languages</th>
+			<td>Java</td><td>Ruby</td><td>Python</td><td>C++</td><td>C</td></tr>
+		<tr><td>C#</td><td>JavaScript</td><td>Bash</td><td>Flex</td><td>Racket</td></tr>
+		<tr><th colspan="2">Databases</th><td>MySQL</td><td>SQLite3</td></tr>
+		<tr><th colspan="2">Operating Systems</th><td>Linux</td><td>Mac OS X</td><td>Microsoft Windows</td></tr>
+		<tr><th colspan="2" rowspan="3">Other</th>
+			<td>HTML</td><td>.NET</td><td>Rails</td><td>PHP</td><td>CSS</td></tr>
+		<tr><td>Twitter Bootstrap</td><td>JSON</td><td>XML</td><td>Bison</td><td>Gimp</td></tr>
+		<tr><td>Adobe Software</td><td>LibreOffice</td><td>Microsoft Office</td><td>SublimeText</td><td>SolidWorks</td></tr>
+	</table>
+	<table id="ss-small">
+		<tr><th colspan="2">Programming Languages</th></tr>
+		<tr><td>Java</td><td>Ruby</td></tr>
+		<tr><td>Python</td><td>C++</td></tr>
+		<tr><td>C</td><td>C#</td></tr>
+		<tr><td>JavaScript</td><td>Bash</td></tr>
+		<tr><td>Flex</td><td>Racket</td></tr>
+		<tr><th colspan="2">Databases</th></tr>
+		<tr><td>MySQL</td><td>SQLite3</td></tr>
+		<tr><th colspan="2">Operating Systems</th></tr>
+		<tr><td>Linux</td><td>Mac OS X</td><tr>
+		<tr><td colspan="2">Microsoft Windows</td></tr>
+		<tr><th colspan="2">Other</th><tr>
+		<tr><td>HTML</td><td>.NET</td></tr>
+		<tr><td>Rails</td><td>PHP</td></tr>
+		<tr><td>CSS</td><td>JSON</td></tr>
+		<tr><td>XML</td><td>Bison</td></tr>
+		<tr><td>Gimp</td><td>LibreOffice</td></tr>
+		<tr><td colspan="2">Microsoft Office</td></tr>
+		<tr><td colspan="2">Twitter Bootstrap</td></tr>
+		<tr><td colspan="2">Adobe Software</td></tr>
+		<tr><td colspan="2">SublimeText</td></tr>
+		<tr><td colspan="2">SolidWorks</td></tr>
+	</table>
+
+	<h4>Internship Experience</h4>
+	<h5><a href="http://www.symplified.com/">Symplified</a> - Boulder, Colorado - <b>Field Session Intern</b></h5>
+	<p>Wrote base code for a REST applications in Java, .NET, Ruby and PHP</p>
+	<p>Created basic GUIs in order for Symplified to demo the REST applications to clients</p>
+	<p>As a field session intern, progress was evaluated by Colorado School of Mines and received an A</p>
+	<h5><a href="http://www.rice.edu/">Rice University</a> - Houston, Texas - <b>Pathology Intern</b></h5>
+	<p>Upgraded Java and C++ research software for analyzing computer performance profiles</p>
+	<p>Implemented file reading and writing with <a href="https://developers.google.com/protocol-buffers/">Google Protocol Buffers</a> instead of XML</p>
+	<p>Reduced save files from over 1 GB to less than 100 MB</p>
+	<h5><a href="http://www.mdanderson.org/">University of Texas MD Anderson Cancer Center</a> - Houston, Texas - <b>Pathology Intern</b></h5>
+	<p>Used Adobe Photoshop and Gimp to measure breast tumor volumes</p>
+	<p>Conducted simulations for breast tumor volume estimation</p>
+	<p>Assissted pathology researchers with microscope slide organizations</p>
+
+	<h4>Publications</h4>
+	<p>Edgerton ME, Chuang YL, Macklin P, Sanga S, Kim J, Tomaiuolo G, Yang W, <b>Broom AD</b>, Do KA, Christini V.  Using mathematical models to understand the time dependence of the growth of ductal carcinoma in situ.  Abstract, 31st Annual San Antonio Breast Cancer Symposium (2009).</p>
+
+	<h4>Highlighted Projects</h4>
+	<h5>Online Barter</h5>
+	<p> Developed a web application in Ruby on Rails where people can create accounts and place items up for barter</p>
+	<p>Other users can then make trade offers with their own items before trade is accepted, modified, or rejected</p>
+	<p>Used Devise for authentication and Twitter Bootstrap for base styling and auto rescaling</p>
+	<h5>Dota Dictionary</h5>
+	<p>Developed a mobile Android app for quick updates on Dota 2 heroes</p>
+	<p>App connected to google doc which managed the list of available heroes</p>
+	<p>Heroes stored and then sorted through the phone’s SQL database</p>
+	<p>Fragments were used to enable multiple layouts for various screens</p>
+	<h5>Traffic Light Intersection</h5>
+	<p>Developed a computer simulation in Python of a crosswalk intersection</p>
+	<p>Handled random arrivals of pedestrians and cars with acceleration, deceleration and collision</p>
+	<p>Determined when to change lights to allow for pedestrian or car travel</p>
+	<h5>Board Game Scorekeeper (in development)</h5>
+	<p>Developing a mobile Android app for easy scorekeeping of various board games</p>
+	<h5>Dark Souls II Summoner (in development)</h5>
+	<p>Developing a mobile Android app to assist cooperative gameplay in Dark Souls II</p>
+	<h5>Review Website (in development)</h5>
+	<p>Working with two others to create a website which we manage and provide content</p>
+	<h5>Book (in development)</h5>
+	<p>While not computer science related, I am writing a fantasy book, which is awesome!</p>
+
+	<h4>Other Experiences and Service</h4>
+	<p>Designed Prototype satellite to measure high altitude albedo reflection from clouds for Lockheed Martin</p>
+	<p>Designed a heat recovery system for wood-burning ovens to lower use of gas powered water heating system</p>
+	<p>Volunteered at University of Texas MD Anderson Cancer Center during summers from 2006 until 2009</p>
+	<p>Students of Service - Raised money for breast cancer research and provided food for the hungry</p>
+	<p>Houston Food Bank - Assisted Hurricane victims</p>
+	<p>Supported diabetes research - produced and sold over 100 shirts</p>
+
+	<h4>Enrichment Experience</h4>
+	<p>1st Degree Black Belt in Kuk Sool Won (South Korean Martial Arts)</p>
+	<p>Member of Kuk Sool SWAT program (Students With Aptitude for Training)</p>
+	<p>Awarded for swimming competitions and actively practice tennis, badminton</p>
+	<p>Writes short stories and draws cartoons in spare time</p>
+	<p>Speak basic French and Vietnamese</p>
+	<p>Studying Piano since 2006 (Classical, Jazz, New Age, Pop)</p>
+	<p>Studied ceramics, drawing, computer design</p>
+	<p>Born and raised in Australia until 1999 (7 years) and regularly travel to Australia</p>
+	<p>Travelled to Japan with school to study Japanese culture and traditions</p>
+	<p>Travelled to Canada, Mexico, France, New Zealand, Bahamas, Puerto Rico, U.S. Virgin islands, Grand Turk</p>
+	<p>Tutored people ranging from children to university students</p>
 </div>
 
-<!-- content column in the center -->
-<div id="content-col" class="col">
-	<h3>CONTENT</h3>
+<!-- Close wrap -->
 </div>
 
 <!-- footer -->
