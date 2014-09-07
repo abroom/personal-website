@@ -214,10 +214,10 @@ header {
 
 /* Footer */
 footer {
-	margin: 1em 2em;
+	margin: 1em 10%;
 	font-size: 1.5em;
 }
 footer div {
-	width: 400px;
+	max-width: 400px;
 	margin: 0 auto;
 }
