@@ -139,7 +139,7 @@ header {
 
 #contact-col ul {margin: 0 1em; font-size: 1.3em;}
 #contact-col li {
-	margin: 0.5em 1em;
+	margin: 0.5em 3em;
 	list-style: none;
 }
 .link-button {
@@ -181,13 +181,15 @@ header {
 }
 
 /* Resume */	
-#resume * {margin: 0; padding: 0;}
-#resume h3 {padding-left: 0em;}
-#resume a {color: #4881b8;}
+#resume * {margin: 0; padding: 0; padding-left: 2em;}
+#resume h3 {padding-left: 0;}
+#resume a {color: #4881b8; padding-left: 0;}
 #resume a:hover {color: #e2c05c;}
 #resume h4 {font-size: 1.8em; margin-top: 0.5em;}
-#resume h5 {font-size: 1.3em; color: black;}
-#resume p {padding: 0.2em; margin-left: 1em;}
+#resume h5 {font-size: 1.3em; color: black; padding-left: 3em;}
+#resume h5 b {font-weight: normal;}
+#resume p {padding: 0.2em 3em; margin-left: 1em;}
+#resume b {padding-left: 0;}
 
 #resume table{font-size: 1.3em;}
 #resume td{padding-bottom: 0.3em; color: black;}
@@ -196,7 +198,7 @@ header {
 @media (min-width: 740px) {
 	#resume {width: 100%;}
 	#resume table {margin-left: 1em;}
-	#ss-big {font-size: 1em !important;}
+	#ss-big {font-size: 1em;}
 	#ss-big th {padding-right: 1em;}
 	#resume td {padding-right: 1em;}
 	#ss-small {display: none;}
@@ -208,7 +210,6 @@ header {
 	#ss-big {display: none;}
 	#resume table {font-size: 1.3em;}
 	#ss-small td {text-align: center;}
-	#ss-small th {text-align: left;}
 	#resume p{margin-left: 0.3em;}
 }
 
