@@ -69,6 +69,9 @@ header {
 	#navbar {text-align: center; font-size: 1.2em;}
 	#navbar li {padding: 20px;}
 }
+@media (max-width: 400px) {
+	#navbar {font-size: 1em;}
+}
 
 /* Title */
 .title {
@@ -142,10 +145,19 @@ header {
 	margin: 0.5em 3em;
 	list-style: none;
 }
+/* Responsive */
+@media (max-width: 1025px) {
+	#contact-col li {margin: 0.5em 0;}
+}
+@media (max-width: 400px) {
+	#about-col p {padding-left: 0;}
+	#contact-col ul {margin: 0.5em 0;}
+}
 .link-button {
 	/* Size */
 	height: 100px;
 	width: 400px;
+	min-width: 200px;
 	border-radius: 25px;
 
 	/* Background */
@@ -179,9 +191,12 @@ header {
 @media (max-width: 1025px) {
 	.link-button {margin: 0.5em auto;}
 }
+@media (max-width: 400px) {
+	.link-button {font-size: 1em; min-width: 0; pad}
+}
 
-/* Resume */	
-#resume * {margin: 0; padding: 0; padding-left: 2em;}
+/* Resume */
+#resume * {margin: 0; padding: 0;}
 #resume h3 {padding-left: 0;}
 #resume a {color: #4881b8; padding-left: 0;}
 #resume a:hover {color: #e2c05c;}
@@ -194,23 +209,39 @@ header {
 #resume table{font-size: 1.3em;}
 #resume td{padding-bottom: 0.3em; color: black;}
 
+#rc-small {display: none;}
+#ss-tiny {display: none;}
+
 /* Responsive */
 @media (min-width: 740px) {
 	#resume {width: 100%;}
+	#resume * {padding-left: 2em;}
 	#resume table {margin-left: 1em;}
-	#ss-big {font-size: 1em;}
 	#ss-big th {padding-right: 1em;}
-	#resume td {padding-right: 1em;}
 	#ss-small {display: none;}
+	#resume td {padding-right: 1em;}
 }
-@media (min-width: 1300px) {
-	#ss-big {font-size: 1.3em !important;}
+@media (max-width: 1700px) {
+	#ss-big {font-size: 1em !important;}
+}
+@media (max-width: 1300px) {
+	#ss-big td {padding: 0.3em 0.1em;}
 }
 @media (max-width: 740px) {
-	#ss-big {display: none;}
 	#resume table {font-size: 1.3em;}
 	#ss-small td {text-align: center;}
-	#resume p{margin-left: 0.3em;}
+	#ss-big {display: none;}
+	#resume h5 {padding-left: 0.2em;}
+	#resume p {margin-left: 0.3em; padding-left: 0.5em;}
+}
+@media (max-width: 400px) {
+	#rc-big {display: none;}
+	#rc-small {display: inline;}
+	#ss-small {display: none;}
+	#ss-tiny {display: inline; text-align: left;}
+	#resume p {
+		padding: 0.2em 0;
+	}
 }
 
 /* Footer */
